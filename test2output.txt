@@ -1,0 +1,17 @@
+Symbol Table
+Identifier   MemoryLocation   Type
+a             7000             integer
+b             7001             integer
+c             7002             integer
+d             7003             integer
+x             7004             integer
+
+Assembly Code
+1        PUSHM     7000      
+2        PUSHM     7001      
+3        ADD      
+4        PUSHM     7002      
+5        MUL      
+6        PUSHM     7003      
+7        SUB      
+8        POPM      7004      

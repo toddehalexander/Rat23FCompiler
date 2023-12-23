@@ -1,0 +1,31 @@
+Symbol Table
+Identifier   MemoryLocation   Type
+i             7000             integer
+max           7001             integer
+sum           7002             integer
+
+Assembly Code
+1        PUSHI     0         
+2        POPM      7002      
+3        PUSHI     1         
+4        POPM      7000      
+5        STDIN    
+6        POPM      7001      
+7        LABEL    
+8        PUSHM     7000      
+9        PUSHM     7001      
+10       LES      
+11       JUMPZ     21        
+12       PUSHM     7002      
+13       PUSHM     7000      
+14       ADD      
+15       POPM      7002      
+16       PUSHM     7000      
+17       PUSHI     1         
+18       ADD      
+19       POPM      7000      
+20       JUMP      7         
+21       PUSHM     7002      
+22       PUSHM     7001      
+23       ADD      
+24       STDOUT   

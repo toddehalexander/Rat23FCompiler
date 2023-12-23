@@ -1,0 +1,14 @@
+Symbol Table
+Identifier   MemoryLocation   Type
+a             7000             integer
+b             7001             integer
+c             7002             integer
+
+Assembly Code
+1        PUSHM     7000      
+2        PUSHM     7001      
+3        LES      
+4        JUMPZ     7         
+5        PUSHM     7002      
+6        POPM      7000      
+7        LABEL    
